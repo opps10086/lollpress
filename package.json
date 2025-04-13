@@ -1,0 +1,66 @@
+{
+  "name": "loll-press",
+  "version": "0.1.0",
+  "private": false,
+  "description": "现代化的开源博客平台，基于Next.js构建，提供高度自定义性",
+  "author": "Loll Press Team",
+  "license": "MIT",
+  "keywords": [
+    "blog",
+    "cms",
+    "nextjs",
+    "react",
+    "typescript",
+    "markdown",
+    "seo",
+    "ai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loll-press/loll-press.git"
+  },
+  "bugs": {
+    "url": "https://github.com/loll-press/loll-press/issues"
+  },
+  "homepage": "https://github.com/loll-press/loll-press",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,md}\"",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "marked": "^9.0.0",
+    "gray-matter": "^4.0.3",
+    "tailwindcss": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^15.0.0",
+    "prettier": "^3.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.0",
+    "jest": "^29.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  }
+}
